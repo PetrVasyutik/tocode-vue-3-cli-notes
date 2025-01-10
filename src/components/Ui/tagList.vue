@@ -4,7 +4,8 @@
       class="tag-item"
       v-for="item in items"
       :key="item"
-      @click="$emit('onItemClick', item)">
+      @click="$emit('onItemClick', item)"
+      :class="{ isPreview: isPreview }">
       <span>{{ item }}</span>
     </div>
   </div>
@@ -16,6 +17,10 @@ export default {
     items: {
       type: Array,
       require: true,
+    },
+    isPreview: {
+      type: Boolean,
+      default: false
     }
   },
 }
@@ -39,6 +44,7 @@ export default {
     padding: 0;
     color: #444ce0;
     cursor: default;
+    
     &:before {
       content: '#';
     }

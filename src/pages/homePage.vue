@@ -11,7 +11,20 @@ export default {
   components: { mainForm, mainList },
   data() {
     return {
-      notes: ['task 1', 'task 2','task 3']
+      notes: [
+        {
+          title: 'learn vue 3',
+          tags: ['work'],
+        },
+        {
+          title: 'Finish course',
+          tags: ['work', 'home'],
+        },
+        {
+          title: 'Hello',
+          tags: [],
+        },
+      ]
     }
   },
   methods: {

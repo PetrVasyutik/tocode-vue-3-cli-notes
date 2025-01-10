@@ -34,11 +34,13 @@ export default {
 }
 </script>
 <style lang="scss">
+
 .note-form__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .note-form {
   display: flex;
   flex-direction: column;
